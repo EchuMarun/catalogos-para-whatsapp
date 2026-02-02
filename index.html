@@ -41,14 +41,29 @@
       border-radius: 14px;
       padding: 16px;
       margin-bottom: 28px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
+    /* TITULOS */
+    .title {
+      margin: 0 0 12px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .title.golden {
+      color: #caa84a; /* dorado Huellitas */
+    }
+
+    .title.blue {
+      color: #2b6cb0; /* azul DisMont */
+    }
+
+    /* IMAGENES */
     .images {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 10px;
-      margin-bottom: 12px;
       justify-items: center;
     }
 
@@ -61,36 +76,17 @@
       box-sizing: border-box;
     }
 
-    /* Header de cada catálogo (cajita clara para que se lea bien) */
-    .work-header {
+    /* DESCRIPCION */
+    .description {
+      margin-top: 12px;
       background: #f1f1f1;
-      border-radius: 10px;
-      padding: 10px 12px;
-      margin-top: 10px;
-    }
-
-    .work-header h3 {
-      margin: 0;
-      font-size: 16px;
-      font-weight: bold;
-      color: #111;
-    }
-
-    .work-header p {
-      margin: 4px 0 0;
-      font-size: 13px;
       color: #333;
+      font-size: 13px;
+      padding: 8px 12px;
+      border-radius: 10px;
     }
 
-    /* Colores por cliente */
-    .work-header.golden h3 {
-      color: #caa84a; /* dorado elegante */
-    }
-
-    .work-header.blue h3 {
-      color: #2b6cb0; /* azul profesional */
-    }
-
+    /* CTA */
     .cta {
       text-align: center;
       margin: 40px 0;
@@ -109,6 +105,7 @@
 </head>
 
 <body>
+
   <header>
     <h1>Catálogos para WhatsApp</h1>
     <p>Diseños claros para vender más y responder menos</p>
@@ -116,65 +113,69 @@
 
   <div class="container">
 
-    <!-- HUELLITAS - PERROS ADULTOS (5) -->
+    <!-- HUELLITAS - PERROS ADULTOS -->
     <div class="work">
+      <h3 class="title golden">Huellitas Food – Perros Adultos</h3>
+
       <div class="images">
-        <img src="img/perros-1-portada.jpg" alt="Huellitas Food Perros Adultos - Portada" />
-        <img src="img/perros-2-categoria.jpg" alt="Huellitas Food Perros Adultos - Categoría" />
-        <img src="img/perros-3-contenido-1.jpg" alt="Huellitas Food Perros Adultos - Contenido" />
-        <img src="img/perros-4-contenido-2.jpg" alt="Huellitas Food Perros Adultos - Contenido" />
-        <img src="img/perros-5-final-redes.jpg" alt="Huellitas Food Perros Adultos - Redes" />
+        <img src="img/perros-1-portada.jpg">
+        <img src="img/perros-2-categoria.jpg">
+        <img src="img/perros-3-contenido-1.jpg">
+        <img src="img/perros-4-contenido-2.jpg">
+        <img src="img/perros-5-final-redes.jpg">
       </div>
 
-      <div class="work-header golden">
-        <h3>Huellitas Food – Perros Adultos</h3>
-        <p>Catálogo digital con precios claros y actualización simple.</p>
+      <div class="description">
+        Catálogo digital con precios claros y actualización simple.
       </div>
     </div>
 
-    <!-- HUELLITAS - GATOS ADULTOS (5) -->
+    <!-- HUELLITAS - GATOS ADULTOS -->
     <div class="work">
+      <h3 class="title golden">Huellitas Food – Gatos Adultos</h3>
+
       <div class="images">
-        <img src="img/gatos-1-portada.jpg" alt="Huellitas Food Gatos Adultos - Portada" />
-        <img src="img/gatos-2-categoria.jpg" alt="Huellitas Food Gatos Adultos - Categoría" />
-        <img src="img/gatos-3-contenido-1.jpg" alt="Huellitas Food Gatos Adultos - Contenido" />
-        <img src="img/gatos-4-contenido-2.jpg" alt="Huellitas Food Gatos Adultos - Contenido" />
-        <img src="img/gatos-5-final-redes.jpg" alt="Huellitas Food Gatos Adultos - Redes" />
+        <img src="img/gatos-1-portada.jpg">
+        <img src="img/gatos-2-categoria.jpg">
+        <img src="img/gatos-3-contenido-1.jpg">
+        <img src="img/gatos-4-contenido-2.jpg">
+        <img src="img/gatos-5-final-redes.jpg">
       </div>
 
-      <div class="work-header golden">
-        <h3>Huellitas Food – Gatos Adultos</h3>
-        <p>Catálogo digital organizado por líneas y fácil de actualizar.</p>
+      <div class="description">
+        Catálogo digital organizado por líneas y fácil de actualizar.
       </div>
     </div>
 
-    <!-- DISMONT - CONGELADOS (4) -->
+    <!-- DISMONT - CONGELADOS -->
     <div class="work">
+      <h3 class="title blue">DisMont – Congelados</h3>
+
       <div class="images">
-        <img src="img/dismont-congelados-1-portada.jpg" alt="DisMont Congelados - Portada" />
-        <img src="img/dismont-congelados-2-contenido-1.jpg" alt="DisMont Congelados - Contenido" />
-        <img src="img/dismont-congelados-3-contenido-2.jpg" alt="DisMont Congelados - Contenido" />
-        <img src="img/dismont-congelados-4-final.jpg" alt="DisMont Congelados - Final" />
+        <img src="img/dismont-congelados-1-portada.jpg">
+        <img src="img/dismont-congelados-2-contenido-1.jpg">
+        <img src="img/dismont-congelados-3-contenido-2.jpg">
+        <img src="img/dismont-congelados-4-final.jpg">
       </div>
 
-      <div class="work-header blue">
-        <h3>DisMont – Congelados</h3>
-        <p>Catálogo de productos congelados organizado para venta por WhatsApp.</p>
+      <div class="description">
+        Catálogo de productos congelados organizado para venta por WhatsApp.
       </div>
     </div>
 
-    <!-- DISMONT - BILLIKEN (4) -->
+    <!-- DISMONT - BILLIKEN -->
     <div class="work">
+      <h3 class="title blue">DisMont – Billiken</h3>
+
       <div class="images">
-        <img src="img/dismont-billiken-1-portada.jpg" alt="DisMont Billiken - Portada" />
-        <img src="img/dismont-billiken-2-contenido-1.jpg" alt="DisMont Billiken - Contenido" />
-        <img src="img/dismont-billiken-3-contenido-2.jpg" alt="DisMont Billiken - Contenido" />
-        <img src="img/dismont-billiken-4-final.jpg" alt="DisMont Billiken - Final" />
+        <img src="img/dismont-billiken-1-portada.jpg">
+        <img src="img/dismont-billiken-2-contenido-1.jpg">
+        <img src="img/dismont-billiken-3-contenido-2.jpg">
+        <img src="img/dismont-billiken-4-final.jpg">
       </div>
 
-      <div class="work-header blue">
-        <h3>DisMont – Billiken</h3>
-        <p>Catálogo visual de golosinas con grilla clara de productos.</p>
+      <div class="description">
+        Catálogo visual de golosinas con grilla clara de productos.
       </div>
     </div>
 
@@ -186,5 +187,6 @@
     </div>
 
   </div>
+
 </body>
 </html>
