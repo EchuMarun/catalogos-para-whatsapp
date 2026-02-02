@@ -46,17 +46,29 @@
 
     /* TITULOS */
     .title {
-      margin: 0 0 12px;
+      margin: 0 0 6px;
       font-size: 18px;
       font-weight: bold;
+      padding-left: 4px;
     }
 
     .title.golden {
-      color: #caa84a; /* dorado Huellitas */
+      color: #caa84a;
     }
 
     .title.blue {
-      color: #2b6cb0; /* azul DisMont */
+      color: #2b6cb0;
+    }
+
+    /* DESCRIPCION */
+    .description {
+      margin: 0 0 14px;
+      background: #f1f1f1;
+      color: #333;
+      font-size: 13px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      line-height: 1.35;
     }
 
     /* IMAGENES */
@@ -76,14 +88,14 @@
       box-sizing: border-box;
     }
 
-    /* DESCRIPCION */
-    .description {
-      margin-top: 12px;
-      background: #f1f1f1;
-      color: #333;
-      font-size: 13px;
-      padding: 8px 12px;
-      border-radius: 10px;
+    /* MOBILE */
+    @media (max-width: 480px) {
+      .images {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .images img {
+        max-width: 100%;
+      }
     }
 
     /* CTA */
@@ -113,9 +125,12 @@
 
   <div class="container">
 
-    <!-- HUELLITAS - PERROS ADULTOS -->
+    <!-- HUELLITAS - PERROS -->
     <div class="work">
       <h3 class="title golden">Huellitas Food – Perros Adultos</h3>
+      <div class="description">
+        Catálogo digital con precios claros y actualización simple.
+      </div>
 
       <div class="images">
         <img src="img/perros-1-portada.jpg">
@@ -124,15 +139,14 @@
         <img src="img/perros-4-contenido-2.jpg">
         <img src="img/perros-5-final-redes.jpg">
       </div>
-
-      <div class="description">
-        Catálogo digital con precios claros y actualización simple.
-      </div>
     </div>
 
-    <!-- HUELLITAS - GATOS ADULTOS -->
+    <!-- HUELLITAS - GATOS -->
     <div class="work">
       <h3 class="title golden">Huellitas Food – Gatos Adultos</h3>
+      <div class="description">
+        Catálogo digital organizado por líneas y fácil de actualizar.
+      </div>
 
       <div class="images">
         <img src="img/gatos-1-portada.jpg">
@@ -141,15 +155,14 @@
         <img src="img/gatos-4-contenido-2.jpg">
         <img src="img/gatos-5-final-redes.jpg">
       </div>
-
-      <div class="description">
-        Catálogo digital organizado por líneas y fácil de actualizar.
-      </div>
     </div>
 
     <!-- DISMONT - CONGELADOS -->
     <div class="work">
       <h3 class="title blue">DisMont – Congelados</h3>
+      <div class="description">
+        Catálogo de productos congelados organizado para venta por WhatsApp.
+      </div>
 
       <div class="images">
         <img src="img/dismont-congelados-1-portada.jpg">
@@ -157,25 +170,20 @@
         <img src="img/dismont-congelados-3-contenido-2.jpg">
         <img src="img/dismont-congelados-4-final.jpg">
       </div>
-
-      <div class="description">
-        Catálogo de productos congelados organizado para venta por WhatsApp.
-      </div>
     </div>
 
     <!-- DISMONT - BILLIKEN -->
     <div class="work">
       <h3 class="title blue">DisMont – Billiken</h3>
+      <div class="description">
+        Catálogo visual de golosinas con grilla clara de productos.
+      </div>
 
       <div class="images">
         <img src="img/dismont-billiken-1-portada.jpg">
         <img src="img/dismont-billiken-2-contenido-1.jpg">
         <img src="img/dismont-billiken-3-contenido-2.jpg">
         <img src="img/dismont-billiken-4-final.jpg">
-      </div>
-
-      <div class="description">
-        Catálogo visual de golosinas con grilla clara de productos.
       </div>
     </div>
 
